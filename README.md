@@ -8,7 +8,7 @@ As part of domain ownership validation, cert-manager provisions a temporary HTTP
 
 If the challenge is successfully validated, Let’s Encrypt issues a TLS certificate. cert-manager stores the certificate and its private key in a Kubernetes TLS `Secret` object. The ingress controller then uses this secret to terminate incoming HTTPS connections, enabling secure communication between **Cloudflare** and the **Kubernetes ingress**. Once decrypted, traffic is forwarded internally to the appropriate pods, typically over HTTP unless otherwise configured.
 
-![TLS Flow Diagram]
+## 🚣 TLS Flow Diagram
 
 <img width="845" alt="Screenshot 2025-05-28 at 12 36 47 AM" src="https://github.com/user-attachments/assets/757ce417-84dc-4d30-9030-20b6ba479fc5" />
 
